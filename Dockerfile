@@ -2,15 +2,15 @@
 
 # Alpine base
 FROM alpine:latest
-MAINTAINER Olivier Blunt <olivier.blunt@gmail.com>
+MAINTAINER Rohit Hazra <rohithzr@live.com>
 
 # Install
 COPY install /install
 RUN /bin/sh /install/install.sh
 
 # App files
-COPY index.php /app/index.php
-WORKDIR /app
+COPY index.php /application/index.php
+WORKDIR /application
 
 # Setup
 COPY setup /setup
