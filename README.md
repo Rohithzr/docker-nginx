@@ -16,7 +16,7 @@ COPY public/ /applications/
 Build your new image
 
 ```
-docker build -t firm/project:latest
+docker build -t firm/project:latest .
 ```
 
 Run your Image
